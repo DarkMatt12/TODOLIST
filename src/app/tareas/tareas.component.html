@@ -1,0 +1,53 @@
+<div class="Caja-Buscador">
+  <input class="Buscador" type="text"[(ngModel)] = "name" placeholder="Crear tarea..">
+  <button class="Buscador-Enter" (click)="clickpipipupu()">CREAR</button>
+</div>
+
+<ul>
+    <li [ngClass]="{'Fav' : !tarea.isDone }" *ngFor="let tarea of lista0; let index = index">
+        <div class="SinHacerFav">
+            <h1>{{tarea.title}}</h1>
+            <div class="Caja-botones">
+                <div class="CajaFav">
+                    <button class="BotónFav1"><h1 class="TextoFav" (click)="CambiarFav1(index)">🖤</h1></button>
+                </div>
+                <div class="CajaBotón">
+                    <input class="Botón" [(ngModel)]="tarea.isDone" (click)="Cambiar0(index)" type="checkbox">
+                </div>
+        </div>
+        </div>
+    </li>
+</ul>
+
+
+<ul>
+    <li [ngClass]="{'NoHecho' : !tarea.isDone}" *ngFor="let tarea of lista1; let index = index">
+        <div class="SinHacer">
+            <h1>{{tarea.title}}</h1>
+            <div class="Caja-botones">
+              <div class="CajaFav">
+                  <button class="BotónFav2"><h1 class="TextoFav" (click)="CambiarFav2(index)">🖤</h1></button>
+              </div>
+              <div class="CajaBotón">
+                  <input class="Botón" [(ngModel)]="tarea.isDone" (click)="Cambiar1(index)" type="checkbox">
+              </div>
+          </div>
+        </div>
+    </li>
+
+
+
+</ul>
+<ul>
+    <li [ngClass]="{'Hecho' : tarea.isDone}" *ngFor="let tarea of lista2; let index = index">
+        <div class="Hechos">
+            <h1>{{tarea.title}}</h1>
+            <div class="CajaBotón">
+                <input class="Botón" [(ngModel)]="tarea.isDone" (click)="Cambiar2(index)" type="checkbox">
+            </div>
+        </div>
+    </li>
+
+
+</ul>
+

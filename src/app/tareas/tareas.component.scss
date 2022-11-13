@@ -1,0 +1,109 @@
+.Caja-Buscador{
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+}
+.Buscador{
+    width: 500px;
+    height: 50px;
+    margin-left: 50px;
+    border: 5px solid black;font-size: 20px;
+}
+.Buscador-Enter{
+    width: 100px;
+    height: 100%px;
+    border: 5px solid black;font-size: 20px;
+    border-left: 0px solid black;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    cursor: pointer;
+}
+.Hecho{
+    color: rgb(22, 105, 22);
+    font-style: italic;
+    text-decoration: line-through;
+}
+
+.Hechos{
+    background-color: greenyellow;
+    border: 5px solid green;
+
+}
+.SinHacer{
+    background-color: gray;
+    border: 5px solid black;
+}
+.SinHacerFav{
+    background-color: rgb(238, 238, 32);
+    border: 5px solid rgb(167, 179, 10);
+}
+.Hechos,
+.SinHacer,
+.SinHacerFav{
+    height: 100px;
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 15px;
+    border-radius: 10px;
+    margin: 5px;
+    align-items: center;
+    #text{
+        width: 80%;
+    }
+}
+.Caja-botones{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 112px;
+}
+.CajaBotón{
+    height: 50px;
+    width: 50px;
+   // margin-right: 15px;
+   // margin-top: 15px;
+    border: 2px solid black;
+    border-radius: 5px;
+
+}
+.Botón{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    margin: 0px;
+
+
+}
+
+
+.CajaFav{
+    width: 45px;
+    height: 45px;
+    //margin-top: 25px;
+
+}
+
+.BotónFav1{
+    background-color: yellow;
+    width: 100%;
+    height: 100%;
+    border: 2px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.BotónFav2{
+
+    width: 100%;
+    height: 100%;
+    border: 2px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.TextoFav{
+
+    margin: 0px;
+    font-size: 22px;
+}
